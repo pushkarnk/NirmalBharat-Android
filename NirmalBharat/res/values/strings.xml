@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NirmalBharat</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="welcome_title">Nirmal Bharat</string>
+    <string name="welcome_line">A Cleaner India</string>
+    <string name="welcome_start_button">Start</string>
+    <string name="signup_title">Sign Up</string>
+    <string name="signup_line">Sign Up</string>
+    <string name="signup_username">Username</string>
+    <string name="signup_email">Email</string>
+    <string name="signup_button_text">Sign Up</string>
+    <string name="reg_success_title">Registration Successful!</string>
+    <string name="regsuccess_twitter_tip">Sign-in to Twitter to tweet directly from NirmalBharat</string>
+    <string name="regsucc_no_twitter">No Twitter. Thanks!</string>
+    <string name="regsucc_yes_twitter">I want to sign-in to Twitter</string>
+    <string name="twitter_login_title">Twitter Sign-in</string>
+    <string name="regsucc_continue">Continue</string>
+    <string name="twitter_test_conn">Test connection with Twitter</string>
+    <string name="twitter_login_text">Twitter Sign-in</string>
+    <string name="tl_instr_1">Enter you Twitter credentials by clicking the URL below.</string>
+    <string name="tl_instr_2">Enter the 7-digit PIN given by Twitter</string>
+    <string name="checkin_label">Check-in cleanliness info</string><string name="twitter_relogin_title">Twitter Login Failed</string>
+    <string name="twitter_relogin">I will try again</string>
+    <string name="twitter_skip">I will skip</string>
+    <string name="twitter_done">Twitter Credentials Verified!</string>
+    <string name="twitter_test">Test connection by posting a test-tweet</string>
+    <string name="test">Test</string>
+    <string name="checkin_process">Checking in cleanliness info of a location is a simple 3-step process</string>
+    <string name="firststep">1. Take a picture</string>
+    <string name="secondstep">2. Rate the location</string>
+    <string name="thirdstep">3. Write a comment</string>
+    <string name="camera_label">Photo</string>
+    <string name="display_label">Preview</string>
+    <string name="rating_label">Rate the location</string>
+    <string name="wheel_label">Please wait</string>
+    <string name="thank_label">Thank You!</string>
+    <string name="comment_label">Please comment</string>
+    <string name="btn_capture">Click</string>  
+    <string name="camera_not_found">No camera harware found</string>
+    <string name="take_photo_help">Touch anywhere on screen to take picture</string>
+</resources>

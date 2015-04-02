@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/RegSuccessTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/reg_success_title"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/regSuccessTextTwLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RegSuccessTextTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:gravity="center_horizontal"
+        android:text="@string/regsuccess_twitter_tip"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textSize="12sp" />
+
+    <RadioGroup
+        android:id="@+id/yesnoTwitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regSuccessTextTwLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" >
+
+        <RadioButton
+            android:id="@+id/radioYesTwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:checked="true"
+            android:text="@string/regsucc_yes_twitter" />
+
+        <RadioButton
+            android:id="@+id/radioNoTwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"            
+            android:text="@string/regsucc_no_twitter" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/regSuccContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yesnoTwitter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="registeredContinue"
+        android:text="@string/regsucc_continue" />
+
+</RelativeLayout>

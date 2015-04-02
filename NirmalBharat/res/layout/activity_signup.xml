@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/signupTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/welcome_title"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/signupTextLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/signup_line"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/signupTextUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signupTextLine"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="62dp"
+        android:layout_toLeftOf="@+id/signupTextLine"
+        android:text="@string/signup_username"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/signupEditUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/signupTextUsername"
+        android:layout_alignBottom="@+id/signupTextUsername"
+        android:layout_alignLeft="@+id/signupTextLine"
+        android:layout_alignRight="@+id/signupTextTitle"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/signupTextEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/signupTextUsername"
+        android:layout_below="@+id/signupEditUsername"
+        android:layout_marginTop="40dp"
+        android:text="@string/signup_email"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/signupEditEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/signupTextEmail"
+        android:layout_alignBottom="@+id/signupTextEmail"
+        android:layout_alignLeft="@+id/signupTextLine"
+        android:layout_alignRight="@+id/signupTextTitle"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/signupButtonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/signupTextEmail"
+        android:layout_below="@+id/signupEditEmail"
+        android:layout_marginTop="28dp"
+        android:text="@string/signup_button_text"
+        android:onClick="signUpNewUser" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/signupButtonSubmit"
+        android:layout_alignRight="@+id/signupEditEmail"
+        android:layout_alignTop="@+id/signupButtonSubmit"
+        android:onClick="skipSignup"
+        android:text=" Log In " />
+
+</RelativeLayout>
